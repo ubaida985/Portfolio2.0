@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to bottom right, #333, #000);
+}
+h1{
+  padding: 0 30px;
+  display: inline-block;
+  margin-top: 50px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  font-style: oblique;
+  border-left: 2px #eee solid;
+  border-right: 2px #eee solid;
+  transition: 0.4s;
+}
+h1:hover{
+  padding: 16px 64px;
+}
+h2{
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+}
+a{
+  text-decoration: none;
+  color: rgb(4, 139, 4);
+  font-size: 24px;
+  font-style: italic;
+  transition: 0.4s;
+}
+a:hover{
+  padding: 8px 16px;
+}
+
+img{
+  height: 300px;
+  width: 300px;
+}
+
+a:hover{
+  color: red
+}
+
+p{
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
+main{
+  width: 85%;
+  margin: auto;
+}
+ul,li{
+  list-style: none;
+}
+
+nav{
+  height: 50px;
+  background-color:#222222;
+  width: 100%;
+  position: fixed;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px 0 0;
+  box-sizing: border-box;
+  flex-direction: row-reverse;
+  z-index: 100;
+}
+
+nav a{
+  padding: 0 16px;
+  color: #eee;
+  transition: 0.4s;
+  border-left: 2px #eee solid;
+  border-right: 2px #eee solid;
+}
+nav a:hover{
+text-decoration: none;
+color: red;
+}
+
+nav ul{
+display: flex;
+list-style: none;
+justify-content: space-around ;
+align-items: center;
+height: 100%;
+margin:0;
+}
+
+
+.flip-card {
+    margin: auto;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-front img{
+      width:300px;
+      height: 300px;
+  }
+  
+   .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to bottom right, rgb(0, 48, 0), rgb(0, 202, 0));
+  }
+
+  .aboutMe{
+    padding-top: 40px;
+  }
+
+  .aboutMe p{
+    font-size: 20px;
+    padding: 50px 10px;
+  }
+  
+  .skill{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  
+/*SOCIAL MEDIA FOOTER*/
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-instagram,
+footer #social-media-footer a .fa-linkedin,
+footer #social-media-footer a .fa-quora,
+footer #social-media-footer a .fa-twitter,
+footer #social-media-footer a .fa-github
+{
+    color: white;
+    transition:0.4s;
+}
+
+footer #social-media-footer ul{
+    display: flex;
+    list-style:none;
+    justify-content: center;
+    padding:0px
+}
+
+footer #social-media-footer ul li{
+    font-size: 48px;
+    padding: 16px;
+    transition: 0.4s;
+}
+
+/*HOVER EFFECT IN SOCIAL MEDIA ICONS*/
+
+footer #social-media-footer ul li:hover a .fa-facebook{
+    color: #3b5998 ;
+}
+
+footer #social-media-footer ul li:hover a .fa-linkedin{
+    color: #0e76a8 ;
+}
+
+footer #social-media-footer ul li:hover a .fa-instagram{
+    color: #a646c4  ;
+}
+
+footer #social-media-footer ul li:hover a .fa-twitter{
+    color: #00acee  ;
+}
+footer #social-media-footer ul li:hover a .fa-quora{
+    color: #AA2200  ;
+}
+footer #social-media-footer ul li:hover a .fa-github{
+  color: #333
+}
+
+
+.flip-card-back a{
+  color: #000;
+}
+.flip-card-back a:hover{
+  color: red
+}
+
+
+@media(max-width:950px){
+  .skill{
+    flex-direction: column;
+  }
+  .flip-card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
